@@ -37,7 +37,7 @@ const ConnectButton = styled(WalletDialogButton)`
   height: 60px;
   margin-top: 10px;
   margin-bottom: 5px;
-  background: linear-gradient(180deg, #604ae5 0%, #813eee 100%);
+  background: linear-gradient(180deg, #FF8410 0%, #924700 100%);
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -492,10 +492,12 @@ const Home = (props: HomeProps) => {
   width: 100%; 
   height: 350px;
   object-fit: cover;
+  margin-bottom: -3px;
+  border-radius: 10%;
   `
   
   return (
-    <Container style={{ marginTop: 100 }}>
+    <Container style={{ marginTop: 10}}>
       <Container maxWidth="xs" style={{ position: "relative" }}>
         <EddFoxImage src="/eddfox.png" alt="eddfox"/>
         <Paper

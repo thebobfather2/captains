@@ -2,6 +2,7 @@ import "./App.css";
 import { useMemo } from "react";
 import * as anchor from "@project-serum/anchor";
 import Home from "./Home";
+import Navbar from "./components/Navbar";
 import { DEFAULT_TIMEOUT } from "./connection";
 import { clusterApiUrl } from "@solana/web3.js";
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
@@ -72,6 +73,7 @@ const App = () => {
       <ConnectionProvider endpoint={endpoint}>
         <WalletProvider wallets={wallets} autoConnect>
           <WalletDialogProvider>
+            <Navbar />
             <Home
               candyMachineId={candyMachineId}
               connection={connection}
