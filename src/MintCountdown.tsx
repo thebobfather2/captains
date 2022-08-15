@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme: Theme) =>
       alignContent: "center",
       alignItems: "center",
       justifyContent: "center",
-      background: "#384457",
+      background: "#874201",
       color: "white",
       borderRadius: 5,
       fontWeight: "bold",

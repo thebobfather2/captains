@@ -488,14 +488,21 @@ const Home = (props: HomeProps) => {
     })();
   }, [refreshCandyMachineState]);
 
+  const EddFoxImage = styled("img")`
+  width: 100%; 
+  height: 350px;
+  object-fit: cover;
+  `
+  
   return (
     <Container style={{ marginTop: 100 }}>
       <Container maxWidth="xs" style={{ position: "relative" }}>
+        <EddFoxImage src="/eddfox.png" alt="eddfox"/>
         <Paper
           style={{
             padding: 24,
             paddingBottom: 10,
-            backgroundColor: "#151A1F",
+            background: 'linear-gradient(180deg, #FF8410 0%, #924700 100%)',
             borderRadius: 6,
           }}
         >
