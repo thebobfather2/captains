@@ -43,8 +43,8 @@ const Navbar = () => {
             <Title>
                 Edd Fox
             </Title>
-            <Link href="/#roadmap">
-                Roadmap
+            <Link href="https://www.bobbyrabbits.com/#/EddFox">
+                About
             </Link>
         
         </Container>
