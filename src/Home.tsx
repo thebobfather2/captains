@@ -38,7 +38,7 @@ const ConnectButton = styled(WalletDialogButton)`
   margin-top: 10px;
   margin-bottom: 5px;
   background: linear-gradient(180deg, #000000 0%, #000000 100%);
-  color: yellow;
+  color: rgb(214, 181, 12);
   font-size: 16px;
   font-weight: bold;
 `;
@@ -509,7 +509,7 @@ const Home = (props: HomeProps) => {
           }}
         >
           {!wallet.connected ? (
-            <ConnectButton style={{color: "yellow"}}>Connect Wallet</ConnectButton>
+            <ConnectButton style={{color: "rgb(214, 181, 12)"}}>Connect Wallet</ConnectButton>
           ) : (
             <>
               {candyMachine && (
@@ -575,7 +575,7 @@ const Home = (props: HomeProps) => {
                         <MintCountdown
                           key="goLive"
                           date={getCountdownDate(candyMachine)}
-                          style={{ justifyContent: "flex-end", color: "yellow" }}
+                          style={{ justifyContent: "flex-end", color: "rgb(214, 181, 12)" }}
                           status={
                             candyMachine?.state?.isSoldOut ||
                             (endDate && Date.now() > endDate.getTime())

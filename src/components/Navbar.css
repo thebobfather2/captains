@@ -1,0 +1,53 @@
+.Container {
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(180deg, #FFFFFF 0%, #000000 100%);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+
+    position: relative;
+}
+
+.Title {
+    font-size: 3rem;
+}
+
+.Subtitle {
+    font-size: 1em;
+    margin-top: "20px";
+}
+
+
+.Link {
+    font-size: 1.5rem;
+    margin-top: "20px";
+}
+
+@media screen and (max-width: 700px) {
+    .Container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .Title {
+        margin-top: 30px;
+        color: black;
+        font-weight: bolder;
+    }
+
+    .Subtitle {
+        margin-top: -42px;
+        color: rgb(214, 181, 12);
+        font-size: large;
+    }
+    
+    .Link {
+        margin-top: -20px;
+        font-size: xx-large;
+        color: grey;
+    }
+  }

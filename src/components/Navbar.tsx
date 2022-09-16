@@ -1,24 +1,12 @@
 import styled from "styled-components";
-
-const Container = styled("div")`
-    width 100vw;
-    height: auto;
-    background: linear-gradient(180deg, #FFFFFF 0%, #000000 100%);
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items:center;
-
-    position: relative;
-`
+import "./Navbar.css";
 
 const Title = styled("h1")`
     font-size: 3rem;
     margin: 0;
     white-space: nowrap;
     font-family: 'Rockwell', cursive;
-    color: #FFFF00
+    color: rgb(214, 181, 12)
 `
 
 const Link = styled("a")`
@@ -39,17 +27,23 @@ const Link = styled("a")`
 
 const Navbar = () => {
     return (
-        <Container>
+        <div className="Container">
             <Title style={{marginTop: "20px", marginBottom: "10px", color: "white"}}>
-                Ghost Bunny
+                <div className="Title">
+                    Ghost Bunny
+                </div>
             </Title>
             <Title style={{fontSize: "1em", marginTop: "20px"}}>
+                <div className="Subtitle">
             by 24 Carrot
+                </div>
             </Title>
             <Link href="https://www.bobbyrabbits.com/#/BunnyClub">
+                <div className="Link">
                 About
+                </div>
             </Link>
-        </Container>
+        </div>
 
     )
 }
