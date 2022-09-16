@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Container = styled("div")`
     width 100vw;
     height: auto;
-    background: linear-gradient(180deg, #FF8410 0%, #924700 100%);
+    background: linear-gradient(180deg, #FFFFFF 0%, #000000 100%);
 
     display: flex;
     flex-wrap: wrap;
@@ -17,8 +17,8 @@ const Title = styled("h1")`
     font-size: 3rem;
     margin: 0;
     white-space: nowrap;
-    font-family: 'Lobster', cursive;
-    color: #000000
+    font-family: 'Rockwell', cursive;
+    color: #FFFF00
 `
 
 const Link = styled("a")`
@@ -40,14 +40,17 @@ const Link = styled("a")`
 const Navbar = () => {
     return (
         <Container>
-            <Title>
-                Edd Fox
+            <Title style={{marginTop: "20px", marginBottom: "10px", color: "white"}}>
+                Ghost Bunny
             </Title>
-            <Link href="https://www.bobbyrabbits.com/#/EddFox">
+            <Title style={{fontSize: "1em", marginTop: "20px"}}>
+            by 24 Carrot
+            </Title>
+            <Link href="https://www.bobbyrabbits.com/#/BunnyClub">
                 About
             </Link>
-        
         </Container>
+
     )
 }
 

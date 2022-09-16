@@ -37,8 +37,8 @@ const ConnectButton = styled(WalletDialogButton)`
   height: 60px;
   margin-top: 10px;
   margin-bottom: 5px;
-  background: linear-gradient(180deg, #FF8410 0%, #924700 100%);
-  color: white;
+  background: linear-gradient(180deg, #000000 0%, #000000 100%);
+  color: yellow;
   font-size: 16px;
   font-weight: bold;
 `;
@@ -499,17 +499,17 @@ const Home = (props: HomeProps) => {
   return (
     <Container style={{ marginTop: 0}}>
       <Container maxWidth="xs" style={{ position: "relative" }}>
-        <EddFoxImage src="/eddfox.png" alt="eddfox"/>
+        <EddFoxImage src="/ghostbunny.gif" alt="eddfox" style={{marginTop: "20px", marginBottom: "20px"}}/>
         <Paper
           style={{
             padding: 24,
             paddingBottom: 10,
-            background: 'linear-gradient(180deg, #FF8410 0%, #924700 100%)',
+            background: 'linear-gradient(180deg, #000000 0%, #FFFFFF 100%)',
             borderRadius: 6,
           }}
         >
           {!wallet.connected ? (
-            <ConnectButton>Connect Wallet</ConnectButton>
+            <ConnectButton style={{color: "yellow"}}>Connect Wallet</ConnectButton>
           ) : (
             <>
               {candyMachine && (
@@ -520,7 +520,7 @@ const Home = (props: HomeProps) => {
                   wrap="nowrap"
                 >
                   <Grid item xs={3}>
-                    <Typography variant="body2" color="textSecondary">
+                    <Typography variant="body2" color="textPrimary">
                       Remaining
                     </Typography>
                     <Typography
@@ -575,7 +575,7 @@ const Home = (props: HomeProps) => {
                         <MintCountdown
                           key="goLive"
                           date={getCountdownDate(candyMachine)}
-                          style={{ justifyContent: "flex-end" }}
+                          style={{ justifyContent: "flex-end", color: "yellow" }}
                           status={
                             candyMachine?.state?.isSoldOut ||
                             (endDate && Date.now() > endDate.getTime())
@@ -594,7 +594,7 @@ const Home = (props: HomeProps) => {
                               variant="caption"
                               align="center"
                               display="block"
-                              style={{ fontWeight: "bold" }}
+                              style={{ fontWeight: "bold", color: "white" }}
                             >
                               UNTIL PUBLIC MINT
                             </Typography>
@@ -715,9 +715,9 @@ const Home = (props: HomeProps) => {
             variant="caption"
             align="center"
             display="block"
-            style={{ marginTop: 7, color: "grey" }}
+            style={{ marginTop: 7, color: "black" }}
           >
-            Powered by METAPLEX
+            Powered by BOBBY RABBITS
           </Typography>
         </Paper>
       </Container>

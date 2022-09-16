@@ -17,8 +17,8 @@ export const CTAButton = styled(Button)`
   height: 60px;
   margin-top: 10px;
   margin-bottom: 5px;
-  background: linear-gradient(180deg, #E86F00 0%, #E86F00 100%);
-  color: white !important;
+  background: linear-gradient(180deg, #000000 0%, #000000 100%);
+  color: yellow !important;
   font-size: 16px;
   font-weight: bold;
 `; // add your own styles here
@@ -52,7 +52,7 @@ export const MintButton = ({
       candyMachine?.state.isPresale ||
       candyMachine?.state.isWhitelistOnly
     ) {
-      return "WHITELIST MINT";
+      return "REDEEM CARROT JUICE";
     }
 
     return "MINT";
